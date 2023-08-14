@@ -1,0 +1,25 @@
+CC = g++
+CFLAGS = -Wall -Werror -Wextra
+
+SRCS = megaphone.cpp
+OBJS = $(SRCS:.cpp=.o)
+NAME = megaphone
+RM = rm -f
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< -o $@
+
+re: fclean all
+
+fclean: clean
+	$(RM) $(NAME).o
+
+clean:
+	$(RM) $(OBJS)
+
+.PHONY: all clean
