@@ -12,7 +12,7 @@ int main(void)
         else if (command == 2)
             phonebook.search_contact();
         else if (command == 3)
-            exit (0);
+            return (0);
     }
     
 }
