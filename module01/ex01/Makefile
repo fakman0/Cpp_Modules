@@ -1,4 +1,4 @@
-SRC = main.cpp class_methods.cpp class_functions.cpp
+SRC = main.cpp Zombie.cpp zombieHorde.cpp
 CC = c++
 CPPFLAGS = -Wall -Wextra -Werror
 
