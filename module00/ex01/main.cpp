@@ -3,7 +3,8 @@
 int main(void)
 {
     Phonebook phonebook;
-
+    
+    phonebook.index = 0;
     while (true)
     {
         int command = phonebook.welcome();

@@ -33,8 +33,8 @@ class Phonebook
 {
     private:
         Contact contacts[8];
-        int index = 0;
     public:
+        int index;
         int		welcome();
         void	add_contact();
         void	search_contact();
