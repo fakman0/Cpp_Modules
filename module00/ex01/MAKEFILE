@@ -1,6 +1,0 @@
-SRC = main.cpp class_methods.cpp class_functions.cpp
-CC = c++
-CPPFLAGS = -Wall -Wextra -Werror
-
-all:
-	$(CC) $(CPPFLAGS) $(SRC) -o phonebook
