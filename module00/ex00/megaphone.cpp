@@ -13,7 +13,6 @@ int main(int argc, char *argv[])
         j = 0;
 		while (argv[i][j])
 			std::cout << (char)std::toupper(argv[i][j++]);
-        std::cout << " ";
     }
     return (0);
 }

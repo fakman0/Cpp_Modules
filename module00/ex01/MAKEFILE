@@ -3,4 +3,4 @@ CC = c++
 CPPFLAGS = -Wall -Wextra -Werror
 
 all:
-	$(CC) $(CPPFLAGS) $(SRC) -o zombie 
+	$(CC) $(CPPFLAGS) $(SRC) -o phonebook
