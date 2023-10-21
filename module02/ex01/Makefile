@@ -1,6 +1,7 @@
-SRC = Fixed.cpp main.cpp
-CC = c++
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98
+all: 
+	c++ -Wall -Wextra -Werror -o Fixed main.cpp Fixed.cpp
 
-all:
-	$(CC) $(CPPFLAGS) $(SRC) -o orthodox 
+fclean:
+	rm -rf Fixed
+
+re: fclean all
